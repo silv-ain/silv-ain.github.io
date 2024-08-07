@@ -1,7 +1,7 @@
 title: Silvain's Study Room
 description: This is my studying diary.
 logo_img: "/assets/img/favicon.webp"
-profile_img: "/assets/img/profile.webp"
+profile_img: "/assets/img/profile.jpg"
 
 # Social Links
 email: syb0424@gmail.com
@@ -21,7 +21,7 @@ google_analytics:
 
 # If your repo name follows the format "<user-name>.github.io", then leave the below blank.
 # Otherwise, set its value as "/<repo-name>". ex) baseurl: /myblog
-baseurl: /
+baseurl:
 
 # # # # # # # # # # # # # # # # # # # # # # # # # #
 #                                                 #
