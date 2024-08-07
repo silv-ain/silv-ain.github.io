@@ -7,6 +7,7 @@ source "https://rubygems.org"
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
+# ERROR!! build : Logging at level: debug Configuration file: /github/workspace/./_config.yml Theme: jekyll-theme-satellite github-pages 232 | Error: The jekyll-theme-satellite theme could not be found. 
 # gem "jekyll", ">= 3.9", "< 5.0"
 gem "jekyll", "~> 4.2" # CHANGED !
 
