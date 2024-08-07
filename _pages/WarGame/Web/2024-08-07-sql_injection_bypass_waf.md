@@ -23,9 +23,7 @@ def check_WAF(data):
     for keyword in keywords:
         if keyword in data:
             return True
-
-    return False
-
+            
 uid = request.args.get('uid')
 if uid:
     if check_WAF(uid):
@@ -50,10 +48,29 @@ INSERT INTO user(uid, upw) values('admin', 'DH{**FLAG**}');
 - 대/소문자 구분을 이용한 문자열 필터링 우회 : union, select > UNION, SELECT
 - 공백 우회 : 공백 > TAB
 
+![FLAG](/assets/sql_injection_bypass_WAF/exploit_flag.png){:style="border:1px solid"}
+<br><br>
+
+# Analysis - sql injection bypass WAF Advanced
+---
+해당 문제는 위의 문제와 유사하지만, 필터링하는 문자열 종류과 대/소문자를 구분하지 않고 필터링을 수행한다는 점에 차이가 있다.
+~~~python
+keywords = ['union', 'select', 'from', 'and', 'or', 'admin', ' ', '*', '/', 
+            '\n', '\r', '\t', '\x0b', '\x0c', '-', '+']
+
+def check_WAF(data):
+    for keyword in keywords:
+        if keyword in data.lower():
+            return True
+~~~
+
+# Exploit - sql injection bypass WAF
+---
+- Hex Encoding 또는 concat() 함수를 이용한 문자열 필터링 우회 : admin > 0x61646D696E, concat('adm','in')
+- 논리연산자 우회 : and > &&
+
 
 ![FLAG](/assets/sql_injection_bypass_WAF/exploit_flag.png){:style="border:1px solid"}
-
-
 
 [Dreamhack]:https://dreamhack.io/
 [sql injection bypass WAF]:https://dreamhack.io/wargame/challenges/415
