@@ -3,7 +3,7 @@ title: "[Dreamhack] Apache htaccess"
 tags:
     - FileUpload
 date: "2024-08-08"
-thumbnail: "/assets/img/thumbnail/dreamhack.png"
+thumbnail: "/assets/Apache_htaccess/문제.png"
 ---
 
 # Intro
