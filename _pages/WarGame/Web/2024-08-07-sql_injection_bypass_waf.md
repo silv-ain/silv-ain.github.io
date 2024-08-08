@@ -5,6 +5,7 @@ tags:
     - Injection
 date: "2024-08-07"
 thumbnail: "/assets/sql_injection_bypass_WAF/문제.png"
+published: false
 ---
 
 # Intro
