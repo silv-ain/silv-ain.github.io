@@ -1,8 +1,7 @@
 ---
 title: "[Dreamhack] sql injection bypass WAF"
 tags:
-    - SQL
-    - Injection
+    - SQL Injection
 date: "2024-08-07"
 thumbnail: "/assets/sql_injection_bypass_WAF/문제.png"
 ---
@@ -17,7 +16,7 @@ thumbnail: "/assets/sql_injection_bypass_WAF/문제.png"
 ![사이트](/assets/sql_injection_bypass_WAF/01_analysis_1.png){: style="border: 1px solid;"}
 
 아래의 코드는 해당 문제의 코드 일부를 발췌한 것으로, **SQL Injection 공격**을 통해 admin 계정의 패스워드(FLAG)를 획득하는 것이 목표이다. 파라미터(uid)값을 입력받아 keywords 배열 내 문자열에 대하여 필터링을 수행하는데, 이를 우회하는 것이 문제의 쟁점이다.
-```python
+```Python
 keywords = ['union', 'select', 'from', 'and', 'or', 'admin', ' ', '*', '/']
 def check_WAF(data):
     for keyword in keywords:
@@ -56,7 +55,7 @@ INSERT INTO user(uid, upw) values('admin', 'DH{**FLAG**}');
 # Analysis - sql injection bypass WAF Advanced
 ---
 해당 문제는 위의 문제와 유사하지만, 필터링하는 문자열 종류과 대/소문자를 구분하지 않고 필터링을 수행한다는 점에 차이가 있다.
-~~~python
+~~~Python
 keywords = ['union', 'select', 'from', 'and', 'or', 'admin', ' ', '*', '/', '\n', '\r', '\t', '\x0b', '\x0c', '-', '+']
 
 def check_WAF(data):
@@ -69,6 +68,7 @@ def check_WAF(data):
 ---
 - `Hex Encoding` 또는 `concat()` 함수를 이용한 문자열 필터링 우회 : admin > 0x61646D696E, concat('adm','in')
 - `논리연산자` 이용 : and > &&
+<br>
 
 파라미터(uid) 값에 삽입한 조작 쿼리는 uid가 **admin**이고 upw(FLAG)의 첫 번째 글자가 **D**이면 응답값에 **admin**이 반환되고, upw(FLAG)의 첫 번째 글자가 **D**가 아니면 응답값에 어떠한 값도 반환되지 않는다. 이러한 참/거짓 쿼리의 반환값 차이(admin)를 이용하여 FLAG를 획득한다.
 

@@ -1,8 +1,7 @@
 ---
 title: "[Dreamhack] baby-union"
 tags:
-    - SQL
-    - Injection
+    - SQL Injection
 date: "2024-08-08"
 thumbnail: "/assets/baby_union/문제.png"
 ---
@@ -42,6 +41,7 @@ INSERT INTO fake_table_name (fake_col1, fake_col2, fake_col3, fake_col4) values 
 # Exploit
 ---
 - `UNION SQL Injection` 및 `concat()` 함수 이용
+<br>
 
 ```plainText
 -- Table 명 추출 --

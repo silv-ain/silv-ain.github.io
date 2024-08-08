@@ -1,7 +1,7 @@
 ---
 title: "[Dreamhack] Apache htaccess"
 tags:
-    - FileUpload
+    - File Upload
 date: "2024-08-08"
 thumbnail: "/assets/Apache_htaccess/문제.png"
 ---
@@ -53,7 +53,7 @@ AddType application/x-httpd-php .silvain
 
 #### AddType 지시자 및 Python 코드 이용
 동일하게 `.htaccess`파일 및 웹셸을 업로드하여 flag를 확인하는 코드를 작성해보자.
-```python
+```Python
 from requests import *
 url = "http://host3.dreamhack.games:8848/"
 
