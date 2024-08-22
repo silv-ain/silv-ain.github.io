@@ -59,3 +59,7 @@ defaults:
 kramdown:
   input: GFM
   hard_wrap: true
+
+# Error: Unknown tag 'seo' included in /home/runner/work/silv-ain.github.io/silv-ain.github.io/_layouts/page.html
+plugins:
+  - jekyll-seo-tag
