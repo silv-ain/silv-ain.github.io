@@ -1,10 +1,11 @@
 ---
 title: "[n00bzCTF] Passwordless"
 tags:
-    - n00bzCTF
+    - CTF
     - Web
+    - n00bzCTF
 date: "2024-08-12"
-thumbnail: "/assets/CTF/Web/240812_Passwordless/문제.png"
+thumbnail: "/assets/CTF/Web/240812_Passwordless/thumbnail.png"
 ---
 
 # Intro

@@ -1,10 +1,11 @@
 ---
 title: "[n00bzCTF] Sillygoose"
 tags:
-    - n00bzCTF
+    - CTF
     - Programming
+    - n00bzCTF
 date: "2024-08-13"
-thumbnail: "/assets/CTF/Programming/20240813_Sillygoose/문제.png"
+thumbnail: "/assets/CTF/Programming/20240813_Sillygoose/thumbnail.png"
 use_math: true
 ---
 
