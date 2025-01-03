@@ -8,14 +8,14 @@ date: "2024-10-11"
 thumbnail: "/assets/Knowledge/Web/20241011_AngularJS/thumbnail.png"
 ---
 
-# 01 | Intro
+# Intro
 
 ---
 
 AngularJS LTS는 2022년을 마지막으로 공식적인 지원이 종료되었다.
 그러나 여전히 AngularJS로 개발된 페이지가 존재하기 때문에 해당 프레임워크에 대하여 간단히 소개하려 한다.
 
-# 02 | AngularJS
+# AngularJS
 
 ---
 
@@ -24,7 +24,7 @@ AngularJS는 클라이언트 사이드의 `MVC 구조`를 제공하는 Javascrip
 SPA(Sigle Page Application)는 <u>하나의 웹 페이지가 실행될 때 페이지 주소가 바뀌지 않으면서 새로운 View를 동적으로 로드</u>하는 것으로, 단일 페이지 내에서 사이트의 전체 컨텐츠를 로드한다. 즉, 메인 페이지가 로드되면 링크를 클릭해도 전체 페이지가 다시 로드되지 않고 페이지 자체의 섹션만 업데이트되는 구조이다.
 
 
-### 02-1 | MVC 구조
+### MVC 구조
 
 MVC는 Model, View, Controller의 약자로, 애플리케이션을 세 가지 역할로 구분한 디자인 패턴의 한 종류이다.
 ![MVC Architecture](/assets/Knowledge/Web/20241011_AngularJS/MVC Architecture in AngluarJS.png){: style="border: 1px solid; padding:3%; width:94%;"}
@@ -36,7 +36,7 @@ MVC는 Model, View, Controller의 약자로, 애플리케이션을 세 가지 �
 사용자가 브라우저에 URL을 입력하면 해당 URL에 따라 서버에서 Controller를 호출한다.
 Controller는 요청에 맞는 Model과 View를 사용하여 사용자 요청에 대한 응답을 생성한 후 해당 응답을 사용자에게 전송한다.
 
-### 02-2 | MVC Code
+### MVC Code
 
 AngularJS의 Code 구조는 트리 구조로 계층적으로 구조화되어 있다.
 
@@ -81,14 +81,14 @@ myApp.factory('myService', function($q, $http) {
 })
 ```
 
-### 02-3 | Route
+### Route
 
 Routing 기능은 SPA(Single Page Application)를 지향하는 프레임워크에서 사용하는 중요한 기능이다.
 다수의 UI를 가진 AngularJS의 경우 각 UI를 서로 다른 HTML 파일로 만들고, <u>URL 주소에 따라 특정 화면으로 이동시켜주는 기능</u>이다.
 
 SPA 환경에서는 단일 페이지에서 HTML Element 교체로 이루어져야 하는데, 이를 route 모듈과 ng-view directive의 조합으로 가능하게 한다. `href 방식(#)`으로 이동할 페이지의 링크를 설정한 후 버튼을 누르면, 라우터 기능을 이용하여 <u>페이지의 리로드없이</u> 해당 페이지를 보여준다.
 
-### 02-4 | Scope
+### Scope
 
 AngularJS에서의 Scope는 Controller나 Directive의 유효 범위 내 저장공간이라고 생각하는 것이 이해하기 쉽다.
 View는 Scope를 통해 Controller 내부에 정의된 Model(Data)이나 핸들러 함수에 접근할 수 있다. 즉 해당 Controller의 Scope에서 Model과 핸들러 함수를 찾게 된다.
@@ -142,7 +142,7 @@ angular.element(document.querySelectorAll('[ng-controller="birthPlace"]')[0]).sc
 angular.element(document.querySelector("body > div > div:nth-child(2)")).scope().enter();
 ```
 
-### 02-5 | Directives
+### Directives
 
 Directives는 HTML을 확장하는 새로운 속성으로, HTML 컴파일러($compile)에게 지정된 동작을 DOM 요소에 연결하거나 DOM 요소와 그 하위 요소를 변환할 수 있게 돕는다.
 애플리케이션에 기능을 제공하는 내장 지시문과 사용자가 직접 Directives를 정의하는 지시문이 있다.
