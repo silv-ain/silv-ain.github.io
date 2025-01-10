@@ -5,7 +5,7 @@ tags:
     - Web
     - n00bzCTF
 date: "2024-08-12"
-thumbnail: "/assets/CTF/Web/240812_Passwordless/thumbnail.png"
+thumbnail: "/assets/Security/CTF/Web/240812_Passwordless/thumbnail.png"
 ---
 
 # Intro
@@ -16,7 +16,7 @@ thumbnail: "/assets/CTF/Web/240812_Passwordless/thumbnail.png"
 # Analysis
 ---
 해당 사이트는 `passwordless Username`을 통해서 로그인을 수행한다.
-![site](/assets/CTF/Web/240812_Passwordless/01_analysis_1.png){: style="border: 1px solid;"}
+![site](/assets/Security/CTF/Web/240812_Passwordless/01_analysis_1.png){: style="border: 1px solid;"}
 
 Username 별로 고유의 UUID가 존재하고, `/UUID` 페이지에 접근 시 사용자에 해당하는 페이지를 렌더링한다.
 만약 Username 자체를 `admin123`으로 입력하여 요청한 것이 아닌, 접근한 페이지에 해당하는 UUID가 `admin123의 UUID`라면 FLAG를 출력하는 구조이다.
@@ -62,4 +62,4 @@ print(str(uuid.uuid5(leet, 'admin123'))) # 3c68e6cc-.....
 ```
 
 이제 획득한 admin123 계정의 UUID 페이지로 접근하면 FLAG를 획득할 수 있다.
-![flag](/assets/CTF/Web/240812_Passwordless/02_exploit_1.png){: style="border: 1px solid;"}
+![flag](/assets/Security/CTF/Web/240812_Passwordless/02_exploit_1.png){: style="border: 1px solid;"}

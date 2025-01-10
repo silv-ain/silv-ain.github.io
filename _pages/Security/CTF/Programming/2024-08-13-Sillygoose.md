@@ -5,7 +5,7 @@ tags:
     - Programming
     - n00bzCTF
 date: "2024-08-13"
-thumbnail: "/assets/CTF/Programming/20240813_Sillygoose/thumbnail.png"
+thumbnail: "/assets/Security/CTF/Programming/20240813_Sillygoose/thumbnail.png"
 use_math: true
 ---
 
@@ -37,7 +37,7 @@ else:
 
 이진 탐색의 시간 복잡도는 $O(logN)$으로 배열을 전수 조사하는 $O(N)$에 비하면 상대적으로 빠른 탐색 알고리즘에 속한다.
 $O(logN)$의 시간으로 값을 찾을 수 있는 이유는 탐색 대상을 절반씩 줄여나가기 때문이다.
-![Binary Search](/assets/CTF/Programming/20240813_Sillygoose/01_analysis_1.gif){: style="border: 1px solid;"}
+![Binary Search](/assets/Security/CTF/Programming/20240813_Sillygoose/01_analysis_1.gif){: style="border: 1px solid;"}
 
 탐색할 데이터 범위가 넓거나 많은 경우, <u>상대적으로 짧은 시간과 적은 횟수</u>로 목표값을 찾을 수 있어 많이 사용하는 알고리즘이다.
 
@@ -82,4 +82,4 @@ find_answer('IP', PORT)
 ```
 
 서버의 응답을 출력하여 결론적으로 FLAG를 획득하였다!
-![FLAG](/assets/CTF/Programming/20240813_Sillygoose/02_exploit_1.png){: style="border: 1px solid;"}
+![FLAG](/assets/Security/CTF/Programming/20240813_Sillygoose/02_exploit_1.png){: style="border: 1px solid;"}

@@ -352,7 +352,7 @@ main {
       border:1px solid lightgrey;
       word-wrap:break-word;
       white-space:initial;
-      max-width:16rem;
+      max-width:fit-content; // 16rem > fit-content
     }
     thead tr { height:3.5rem; }
     tbody tr { height:3rem; }
