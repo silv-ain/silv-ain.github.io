@@ -12,10 +12,10 @@ linkedin_username:
 facebook_username:
 
 # External API
-data-repo="silv-ain/silv-ain.github.io" # CHANGED!
-data-repo-id="R_kgDOMmQ5SQ" # CHANGED!
-data-category="Q&A" # CHANGED!
-data-category-id="DIC_kwDOMmQ5Sc4Ch2B8" # CHANGED!
+data-repo: "silv-ain/silv-ain.github.io" # CHANGED!
+data-repo-id: "R_kgDOMmQ5SQ" # CHANGED!
+data-category: "Q&A" # CHANGED!
+data-category-id: "DIC_kwDOMmQ5Sc4Ch2B8" # CHANGED!
 goatcounter_code:
 google_analytics:
 
