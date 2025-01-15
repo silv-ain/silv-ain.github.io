@@ -65,7 +65,7 @@ plugins:
   - jekyll-seo-tag
 
 # giscus(blog comment)
-giscus-repo: "silv-ain/silv-ain.github.io"
-giscus-repoId: "R_kgDOMmQ5SQ"
-giscus-category: "Q&A"
-giscus-categoryId: "DIC_kwDOMmQ5Sc4Ch2B8"
+giscus_repo: "silv-ain/silv-ain.github.io"
+giscus_repoId: "R_kgDOMmQ5SQ"
+giscus_category: "Q&A"
+giscus_categoryId: "DIC_kwDOMmQ5Sc4Ch2B8"
