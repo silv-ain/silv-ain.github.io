@@ -16,7 +16,7 @@ data-repo:
 data-repo-id:
 data-category:
 data-category-id:
-goatcounter_code:
+goatcounter_code: silv-ain # Visitor Counter
 google_analytics:
 
 # If your repo name follows the format "<user-name>.github.io", then leave the below blank.
@@ -64,7 +64,7 @@ kramdown:
 plugins:
   - jekyll-seo-tag
 
-# giscus(blog comment)
+# giscus : Comment system
 giscus_repo: "silv-ain/silv-ain.github.io"
 giscus_repoId: "R_kgDOMmQ5SQ"
 giscus_category: "Q&A"
