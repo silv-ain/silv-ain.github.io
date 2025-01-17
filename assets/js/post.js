@@ -136,7 +136,7 @@ window.addEventListener('load', function(){
         const goatcounterCode = pageHits.getAttribute('usercode');
         const requestURL = 'https://' 
             + goatcounterCode 
-            + '.goatcounter.com/counter/' 
+            + '.goatcounter.com/count/' 
             + encodeURIComponent(location.pathname) 
             + '.json';
 
